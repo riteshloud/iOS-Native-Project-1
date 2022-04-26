@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OptionsCell" id="V4N-DI-qAw" customClass="OptionsCell" customModule="Vextrader" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="45" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="iAm-7E-m31">
+                <rect key="frame" x="0.0" y="0.0" width="45" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1f7-Tm-Nbn">
+                        <rect key="frame" x="0.0" y="0.0" width="40" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fund Topup History" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ol-aG-R6H">
+                                <rect key="frame" x="15" y="5" width="10" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1058823529" green="0.67843137249999996" blue="0.72156862749999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="1ol-aG-R6H" secondAttribute="bottom" constant="5" id="BVx-gD-tXe"/>
+                            <constraint firstAttribute="trailing" secondItem="1ol-aG-R6H" secondAttribute="trailing" constant="15" id="IFL-6W-GxS"/>
+                            <constraint firstItem="1ol-aG-R6H" firstAttribute="leading" secondItem="1f7-Tm-Nbn" secondAttribute="leading" constant="15" id="JUr-fD-XB1"/>
+                            <constraint firstItem="1ol-aG-R6H" firstAttribute="top" secondItem="1f7-Tm-Nbn" secondAttribute="top" constant="5" id="uhD-xJ-lwE"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="1f7-Tm-Nbn" secondAttribute="bottom" id="Ssi-Re-RwV"/>
+                    <constraint firstItem="1f7-Tm-Nbn" firstAttribute="top" secondItem="iAm-7E-m31" secondAttribute="top" id="kNr-Y8-6Bi"/>
+                    <constraint firstAttribute="trailing" secondItem="1f7-Tm-Nbn" secondAttribute="trailing" constant="5" id="o5B-h4-Dgk"/>
+                    <constraint firstItem="1f7-Tm-Nbn" firstAttribute="leading" secondItem="iAm-7E-m31" secondAttribute="leading" id="q9M-xQ-11g"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="45" height="50"/>
+            <connections>
+                <outlet property="lblTitle" destination="1ol-aG-R6H" id="5Im-ZK-XX0"/>
+                <outlet property="vwDecorate" destination="1f7-Tm-Nbn" id="0EB-RE-i6I"/>
+            </connections>
+            <point key="canvasLocation" x="132.60869565217394" y="32.8125"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HistoryCell" id="czB-4H-svr" customClass="HistoryCell" customModule="Vextrader" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="218" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="M93-qt-gBq">
+                <rect key="frame" x="0.0" y="0.0" width="218" height="56"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfD-t5-Z8c">
+                        <rect key="frame" x="5" y="10" width="208" height="36"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCD-nd-YYt">
+                                <rect key="frame" x="52.5" y="0.0" width="103" height="1.5"/>
+                                <color key="backgroundColor" red="0.0" green="0.42745098040000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1.5" id="LjM-gY-mYb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fund Topup History" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9d3-h8-cnC">
+                                <rect key="frame" x="10" y="11.5" width="188" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.42745098040000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9d3-h8-cnC" firstAttribute="leading" secondItem="cfD-t5-Z8c" secondAttribute="leading" constant="10" id="FeA-Tz-Fd7"/>
+                            <constraint firstItem="hCD-nd-YYt" firstAttribute="centerX" secondItem="9d3-h8-cnC" secondAttribute="centerX" id="Qms-hI-Zmo"/>
+                            <constraint firstAttribute="bottom" secondItem="9d3-h8-cnC" secondAttribute="bottom" constant="5" id="Y6b-TW-Tg4"/>
+                            <constraint firstAttribute="trailing" secondItem="9d3-h8-cnC" secondAttribute="trailing" constant="10" id="btN-vz-zaR"/>
+                            <constraint firstItem="9d3-h8-cnC" firstAttribute="top" secondItem="hCD-nd-YYt" secondAttribute="bottom" constant="10" id="eR7-Xd-HJq"/>
+                            <constraint firstItem="hCD-nd-YYt" firstAttribute="top" secondItem="cfD-t5-Z8c" secondAttribute="top" id="g0S-PU-s0l"/>
+                            <constraint firstItem="hCD-nd-YYt" firstAttribute="width" secondItem="9d3-h8-cnC" secondAttribute="width" multiplier="0.55" id="wLo-9V-Nnx"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cfD-t5-Z8c" firstAttribute="top" secondItem="M93-qt-gBq" secondAttribute="top" constant="10" id="99I-TT-dNx"/>
+                    <constraint firstAttribute="bottom" secondItem="cfD-t5-Z8c" secondAttribute="bottom" constant="10" id="QZe-Da-QZN"/>
+                    <constraint firstAttribute="trailing" secondItem="cfD-t5-Z8c" secondAttribute="trailing" constant="5" id="dTM-Jx-bLk"/>
+                    <constraint firstItem="cfD-t5-Z8c" firstAttribute="leading" secondItem="M93-qt-gBq" secondAttribute="leading" constant="5" id="m97-gd-biq"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="218" height="45"/>
+            <connections>
+                <outlet property="cellBackView" destination="cfD-t5-Z8c" id="WHT-p9-Dvc"/>
+                <outlet property="nameLabel" destination="9d3-h8-cnC" id="d8u-MW-Z1R"/>
+                <outlet property="topIndicator" destination="hCD-nd-YYt" id="dR5-O4-qCf"/>
+            </connections>
+            <point key="canvasLocation" x="257.97101449275362" y="33.816964285714285"/>
+        </collectionViewCell>
+    </objects>
+</document>

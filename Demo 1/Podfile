@@ -1,0 +1,27 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Demo 1' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Demo 1
+  pod 'Alamofire', '~> 4.0'
+  pod 'SwiftyJSON', '~> 4.2'
+  pod 'ReachabilitySwift'
+  pod 'IQKeyboardManagerSwift'
+  pod 'SVProgressHUD'
+  pod 'SwiftValidators'
+  pod 'Localize-Swift'
+  pod 'DropDown'
+  pod 'AKSideMenu'
+  pod 'Charts'
+  pod 'SDWebImage', '~> 5.0'
+  pod "JTSImageViewController"
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Crashlytics'
+  pod 'ActionSheetPicker-3.0'
+  pod 'Siren'
+  pod 'MBCircularProgressBar'
+
+end

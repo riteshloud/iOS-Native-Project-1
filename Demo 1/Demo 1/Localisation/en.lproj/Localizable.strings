@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  Demo 1
+
+ Created by Demo MACBook Pro on 21/04/22.
+  
+*/
+
+//CONSTANT FILE
+"Please check your internet connection and try again." = "Please check your internet connection and try again.";
+"Sorry we are unable to connect with the server, please try again later" = "Sorry we are unable to connect with the server, please try again later";
+"Biometric is not supported or not setup in your device." = "Biometric is not supported or not setup in your device.";
+"Please use your Passcode" = "Please use your Passcode";
+"Authentication required to access the secure data" = "Authentication required to access the secure data";
+
+//EXTENSION FILE
+"year ago" = "year ago";
+"years ago" = "years ago";
+"month ago" = "month ago";
+"months ago" = "months ago";
+"day ago" = "day ago";
+"days ago" = "days ago";
+"hour ago" = "hour ago";
+"hours ago" = "hours ago";
+"Just now" = "Just now";

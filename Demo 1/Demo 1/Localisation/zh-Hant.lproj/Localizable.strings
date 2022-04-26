@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  Demo 1
+
+ Created by Demo MACBook Pro on 21/04/22.
+  
+*/
+
+//CONSTANT FILE
+"Please check your internet connection and try again." = "請檢查您的互聯網連接，然後重試。";
+"Sorry we are unable to connect with the server, please try again later" = "抱歉，我們無法連接服務器，請稍後重試。";
+"Biometric is not supported or not setup in your device." = "您的設備不支持或未設置生物識別功能。";
+"Please use your Passcode" = "請使用您的密碼";
+"Authentication required to access the secure data" = "需要驗證才能訪問安全數據";
+
+//EXTENSION FILE
+"year ago" = "年前";
+"years ago" = "幾年前";
+"month ago" = "個月前";
+"months ago" = "幾個月前";
+"day ago" = "天前";
+"days ago" = "幾天前";
+"hour ago" = "小時前";
+"hours ago" = "小時前";
+"Just now" = "現在";
